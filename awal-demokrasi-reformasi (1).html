@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awal Demokrasi Reformasi (1998–2004) | Media Pembelajaran Sejarah</title>
+<style>
+:root{--bg-primary:#fcfcfd;--bg-surface:#fff;--bg-subtle:#f3f4f6;--bg-highlight:#fef2f2;--border-color:#e5e7eb;--border-focus:#781315;--text-main:#111827;--text-muted:#4b5563;--text-light:#6b7280;--primary:#781315;--primary-hover:#5e0e10;--primary-subtle:#fbebee;--accent-gold:#c99738;--accent-gold-light:#fef9ee;--accent:#dc2626;--card-shadow:0 4px 6px -1px rgba(0,0,0,.05),0 2px 4px -2px rgba(0,0,0,.05);--card-shadow-hover:0 12px 20px -3px rgba(120,19,21,.12),0 6px 8px -4px rgba(0,0,0,.06);--nav-height:64px;--font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+
+@media (prefers-color-scheme:dark){
+:root{--bg-primary:#0f172a;--bg-surface:#1e293b;--bg-subtle:#334155;--bg-highlight:#2c1a1d;--border-color:#334155;--border-focus:#ef4444;--text-main:#f8fafc;--text-muted:#cbd5e1;--text-light:#94a3b8;--primary:#ef4444;--primary-hover:#f87171;--primary-subtle:#450a0a;--accent-gold:#d4af37;--accent-gold-light:#2d2616;--accent:#f87171;--card-shadow:0 4px 6px -1px rgba(0,0,0,.3);--card-shadow-hover:0 10px 15px -3px rgba(0,0,0,.4)}
+header{background-color:rgba(30,41,59,.94)}
+.btn-flip-back{background:#2b2210;color:#fde68a;border-color:#785815}
+.btn-flip-back:hover{background:#d4af37;color:#1a1500}
+.ce-badge-cause{background:#78350f;color:#fef3c7}
+.ce-badge-effect{background:#14532d;color:#dcfce7}
+}
+
+/* Reset & base */
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-family);background-color:var(--bg-primary);color:var(--text-main);line-height:1.65;padding-top:var(--nav-height)}
+
+/* Progress bar */
+#progress-container{position:fixed;top:0;left:0;width:100%;height:4px;background:transparent;z-index:1000}
+#progress-bar{height:100%;width:0%;background:linear-gradient(90deg,#781315,#c99738,#dc2626);transition:width .1s ease-out}
+
+/* Navbar */
+header{position:fixed;top:4px;left:0;width:100%;height:var(--nav-height);background-color:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border-color);display:flex;align-items:center;justify-content:space-between;padding:0 1rem;z-index:999}
+.nav-brand{font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:.5rem;color:var(--primary)}
+.badge-flag{display:inline-flex;width:18px;height:12px;border:1px solid var(--border-color);border-radius:2px;overflow:hidden;flex-direction:column}
+.badge-flag-red{background:#781315;flex:1}
+.badge-flag-white{background:#fff;flex:1}
+.nav-scroll-wrapper{display:flex;gap:.4rem;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:.25rem 0;max-width:calc(100% - 150px)}
+.nav-scroll-wrapper::-webkit-scrollbar{display:none}
+.nav-link{color:var(--text-muted);text-decoration:none;font-size:.85rem;font-weight:500;padding:.35rem .75rem;border-radius:9999px;white-space:nowrap;transition:all .2s ease;background:transparent}
+.nav-link:hover{color:var(--text-main);background-color:var(--bg-subtle)}
+.nav-link.active{color:#fff;background-color:var(--primary);font-weight:600}
+
+/* Container & sections */
+.container{width:100%;max-width:860px;margin:0 auto;padding:1.5rem 1.25rem}
+section{padding:2.5rem 0;border-bottom:1px solid var(--border-color);opacity:0;transform:translateY(18px);transition:opacity .5s ease-out,transform .5s ease-out}
+section.visible{opacity:1;transform:translateY(0)}
+.section-tag{display:inline-block;text-transform:uppercase;font-size:.75rem;font-weight:700;letter-spacing:.05em;color:var(--primary);background-color:var(--primary-subtle);border:1px solid rgba(120,19,21,.15);padding:.2rem .6rem;border-radius:4px;margin-bottom:.5rem}
+.section-title{font-size:1.65rem;font-weight:800;color:var(--text-main);line-height:1.3;margin-bottom:1rem}
+.section-desc{color:var(--text-muted);font-size:1.05rem;margin-bottom:1.5rem}
+
+/* Hero */
+.hero{padding:3rem 0 2rem;text-align:left}
+.hero-pre{display:inline-flex;align-items:center;gap:.5rem;background-color:var(--primary-subtle);color:var(--primary);font-size:.85rem;font-weight:600;padding:.35rem .75rem;border-radius:9999px;border:1px solid rgba(120,19,21,.15);margin-bottom:1.25rem}
+.hero-title{font-size:2.2rem;font-weight:800;line-height:1.2;color:var(--text-main);margin-bottom:1rem}
+.hero-title span{color:var(--primary)}
+.hero-desc{font-size:1.15rem;color:var(--text-muted);margin-bottom:1.75rem;line-height:1.6}
+.meta-box{background:var(--bg-surface);border:1px solid var(--border-color);border-radius:12px;padding:1.25rem;margin-bottom:2rem;box-shadow:var(--card-shadow)}
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+.meta-item-label{font-size:.75rem;text-transform:uppercase;color:var(--text-light);font-weight:600}
+.meta-item-val{font-size:.95rem;color:var(--text-main);font-weight:600;margin-top:.15rem}
+.member-list{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+.member-pill{font-size:.8rem;background:var(--bg-subtle);color:var(--text-muted);padding:.2rem .6rem;border-radius:6px;border:1px solid var(--border-color)}
+.btn-cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;padding:.85rem 1.6rem;border-radius:8px;font-size:1rem;font-weight:600;text-decoration:none;transition:all .2s;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(120,19,21,.25)}
+.btn-cta:hover{background:var(--primary-hover);transform:translateY(-1px)}
+
+/* Timeline */
+.timeline{position:relative;margin:1.5rem 0;padding-left:2rem}
+.timeline::before{content:'';position:absolute;top:0;left:7px;width:2px;height:100%;background:var(--border-color)}
+.timeline-item{position:relative;margin-bottom:1.75rem}
+.timeline-item:last-child{margin-bottom:0}
+.timeline-dot{position:absolute;left:-2rem;top:4px;width:16px;height:16px;border-radius:50%;background:var(--bg-surface);border:3px solid var(--primary);z-index:1;transition:all .2s ease}
+.timeline-card{background:var(--bg-surface);border:1px solid var(--border-color);border-radius:10px;padding:1.1rem;cursor:pointer;box-shadow:var(--card-shadow);transition:all .2s ease}
+.timeline-card:hover{border-color:var(--primary);box-shadow:var(--card-shadow-hover)}
+.timeline-header{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem}
+.timeline-date{font-size:.85rem;font-weight:700;color:var(--primary)}
+.timeline-title{font-size:1.05rem;font-weight:700;margin-top:.2rem;color:var(--text-main)}
+.timeline-body{margin-top:.6rem;font-size:.95rem;color:var(--text-muted);display:none;border-top:1px dashed var(--border-color);padding-top:.6rem}
+.timeline-item.open .timeline-body{display:block}
+.timeline-item.open .timeline-dot{background:var(--primary);transform:scale(1.15)}
+.timeline-hint{font-size:.75rem;color:var(--text-light);margin-top:.35rem;display:flex;align-items:center;gap:.25rem}
+
+/* 3D flip cards */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.4rem;margin-top:1.25rem}
+.flip-card-container{perspective:1000px;min-height:310px}
+.flip-card-inner{position:relative;width:100%;height:100%;min-height:310px;text-align:left;transition:transform .65s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d;border-radius:14px}
+.flip-card-container.flipped .flip-card-inner{transform:rotateY(180deg)}
+.flip-card-front,.flip-card-back{position:absolute;top:0;left:0;width:100%;height:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden;border-radius:14px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--card-shadow);transition:box-shadow .25s ease,border-color .25s ease}
+.flip-card-front{background:var(--bg-surface);border:1px solid var(--border-color);border-top:3px solid var(--primary);padding:1.35rem;cursor:pointer}
+.flip-card-container:hover .flip-card-front{border-color:var(--accent-gold);box-shadow:var(--card-shadow-hover)}
+.flip-card-back{background:var(--bg-surface);border:1px solid var(--accent-gold);box-shadow:0 10px 25px -5px rgba(201,151,56,.15),var(--card-shadow);padding:1.35rem;transform:rotateY(180deg);cursor:pointer;position:relative;overflow:hidden}
+.flip-card-back::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,var(--primary),var(--accent-gold))}
+.character-top{display:flex;align-items:center;gap:.85rem;margin-bottom:.85rem}
+.character-avatar{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#781315 0%,#991b1b 100%);color:#fef3c7;border:1.5px solid var(--accent-gold);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.05rem;letter-spacing:.5px;flex-shrink:0;box-shadow:0 2px 6px rgba(120,19,21,.2)}
+.character-name{font-size:1.12rem;font-weight:800;color:var(--text-main);line-height:1.25}
+.character-role{font-size:.8rem;color:var(--accent-gold);font-weight:600;margin-top:.15rem}
+.character-desc{font-size:.92rem;color:var(--text-muted);line-height:1.55}
+.btn-flip-trigger{display:inline-flex;align-items:center;justify-content:space-between;width:100%;margin-top:1rem;padding:.5rem .8rem;font-size:.82rem;font-weight:600;border-radius:8px;background:var(--primary-subtle);color:var(--primary);border:1px solid rgba(120,19,21,.12);cursor:pointer;transition:all .2s ease}
+.btn-flip-trigger:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+.btn-flip-back{display:inline-flex;align-items:center;gap:.4rem;align-self:flex-start;margin-top:.85rem;padding:.45rem .85rem;font-size:.82rem;font-weight:600;border-radius:8px;background:var(--accent-gold-light);color:#854d0e;border:1px solid rgba(201,151,56,.35);cursor:pointer;transition:all .2s ease}
+.btn-flip-back:hover{background:var(--accent-gold);color:#fff}
+.back-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px dashed rgba(201,151,56,.35);padding-bottom:.5rem;margin-bottom:.75rem}
+.back-header-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent-gold)}
+.back-content{font-size:.9rem;color:var(--text-muted);line-height:1.6;flex-grow:1}
+
+/* Filterable comparison table */
+.filter-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem}
+.filter-btn{background:var(--bg-surface);border:1px solid var(--border-color);padding:.45rem .9rem;border-radius:9999px;font-size:.85rem;font-weight:600;color:var(--text-muted);cursor:pointer;transition:all .2s}
+.filter-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
+.comparison-container{overflow-x:auto;border:1px solid var(--border-color);border-radius:10px;background:var(--bg-surface)}
+.comp-table{width:100%;border-collapse:collapse;text-align:left;font-size:.95rem;min-width:520px}
+.comp-table th{background:var(--bg-subtle);padding:.85rem 1rem;font-weight:700;border-bottom:1px solid var(--border-color);color:var(--text-main)}
+.comp-table td{padding:1rem;border-bottom:1px solid var(--border-color);vertical-align:top;color:var(--text-muted)}
+.comp-table tr:last-child td{border-bottom:none}
+.col-aspect{font-weight:600;color:var(--text-main);width:28%}
+.col-orba{width:36%;background:rgba(120,19,21,.03)}
+.col-reformasi{width:36%;background:rgba(34,197,94,.03)}
+
+/* Accordion */
+.accordion{display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
+.accordion-item{border:1px solid var(--border-color);border-radius:10px;background:var(--bg-surface);overflow:hidden;transition:border-color .2s}
+.accordion-item.active{border-color:var(--border-focus)}
+.accordion-header{width:100%;padding:1.1rem 1.25rem;background:none;border:none;text-align:left;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:1.05rem;font-weight:700;color:var(--text-main)}
+.accordion-header:hover{background:var(--bg-subtle)}
+.accordion-icon{font-size:1.25rem;line-height:1;transition:transform .25s ease;color:var(--primary)}
+.accordion-item.active .accordion-icon{transform:rotate(45deg)}
+.accordion-content{padding:0 1.25rem 1.1rem;font-size:.95rem;color:var(--text-muted);line-height:1.6;display:none}
+.accordion-item.active .accordion-content{display:block}
+
+/* Cause & effect */
+.cause-effect-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:1rem}
+@media (min-width:680px){.cause-effect-grid,.reflection-grid{grid-template-columns:1fr 1fr}}
+.ce-card{background:var(--bg-surface);border:1px solid var(--border-color);border-radius:12px;padding:1.25rem;box-shadow:var(--card-shadow);position:relative}
+.ce-badge{display:inline-block;font-size:.75rem;font-weight:700;padding:.2rem .5rem;border-radius:4px;margin-bottom:.75rem}
+.ce-badge-cause{background:#fef3c7;color:#92400e}
+.ce-badge-effect{background:#dcfce7;color:#166534}
+.ce-title{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+.ce-text{font-size:.92rem;color:var(--text-muted)}
+
+/* Dinamika mutakhir */
+.mutakhir-box{margin-top:2rem;padding:1.25rem;border-left:4px solid var(--accent-gold);background:var(--bg-surface);border-radius:0 10px 10px 0;box-shadow:var(--card-shadow)}
+.mutakhir-title{font-size:1.05rem;font-weight:700;color:var(--text-main);display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem}
+
+/* Profile table */
+.profile-table-wrapper{overflow-x:auto;border:1px solid var(--border-color);border-radius:10px;background:var(--bg-surface);margin-top:1rem}
+.profile-table{width:100%;border-collapse:collapse;font-size:.92rem;text-align:left}
+.profile-table th{padding:.85rem 1rem;background:var(--bg-subtle);border-bottom:1px solid var(--border-color);font-weight:700;width:30%}
+.profile-table td{padding:.85rem 1rem;border-bottom:1px solid var(--border-color);color:var(--text-muted)}
+.profile-table tr:last-child td{border-bottom:none}
+
+/* Reflection */
+.reflection-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:1.25rem}
+.ref-card{background:var(--bg-surface);border-radius:12px;padding:1.4rem;border:1px solid var(--border-color);box-shadow:var(--card-shadow)}
+.ref-card.maintain{border-top:4px solid #16a34a}
+.ref-card.improve{border-top:4px solid var(--primary)}
+.ref-heading{font-size:1.1rem;font-weight:700;display:flex;align-items:center;gap:.5rem;margin-bottom:.75rem;color:var(--text-main)}
+.ref-card.maintain .ref-heading{color:#16a34a}
+.ref-card.improve .ref-heading{color:var(--primary)}
+
+/* Sources */
+.source-list{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-top:1rem}
+.source-item{background:var(--bg-surface);border:1px solid var(--border-color);padding:.85rem 1rem;border-radius:8px;font-size:.9rem;word-break:break-all}
+.source-item a{color:var(--primary);text-decoration:underline}
+
+/* Back to top */
+#back-to-top{position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;background:var(--primary);color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,0,0,.2);opacity:0;visibility:hidden;transition:all .25s ease;z-index:998}
+#back-to-top.show{opacity:1;visibility:visible}
+#back-to-top:hover{background:var(--primary-hover);transform:translateY(-2px)}
+
+/* Footer */
+footer{text-align:center;padding:2.5rem 1rem;font-size:.85rem;color:var(--text-light);border-top:1px solid var(--border-color);background:var(--bg-surface)}
+</style>
+</head>
+<body>
+
+<div id="progress-container"><div id="progress-bar"></div></div>
+
+<header>
+  <div class="nav-brand">
+    <div class="badge-flag"><div class="badge-flag-red"></div><div class="badge-flag-white"></div></div>
+    <span>Reformasi '98</span>
+  </div>
+  <nav class="nav-scroll-wrapper" id="nav-container">
+    <a class="nav-link active" href="#hero">Awal</a>
+    <a class="nav-link" href="#kapan">Kapan</a>
+    <a class="nav-link" href="#siapa">Siapa</a>
+    <a class="nav-link" href="#bagaimana">Praktik</a>
+    <a class="nav-link" href="#sistem">Sistem</a>
+    <a class="nav-link" href="#kekuatan">Kekuatan</a>
+    <a class="nav-link" href="#masalah">Masalah</a>
+    <a class="nav-link" href="#sebab-akibat">Perubahan</a>
+    <a class="nav-link" href="#profil">Profil</a>
+    <a class="nav-link" href="#refleksi">Refleksi</a>
+    <a class="nav-link" href="#sumber">Sumber</a>
+  </nav>
+</header>
+
+<main class="container">
+
+<!-- 1. HERO -->
+<section class="hero visible" id="hero">
+  <div class="hero-pre"><span>LKPD Kelompok 5</span> • <span>Kelas XI TKJ 2</span></div>
+  <h1 class="hero-title">Awal Demokrasi <span>Era Reformasi</span> (1998–2004)</h1>
+  <p class="hero-desc">Media pembelajaran terstruktur mengenai masa transisi fundamental ketatanegaraan Indonesia pasca-berakhirnya Orde Baru menuju konsolidasi demokrasi multipartai dan desentralisasi kekuasaan.</p>
+  <div class="meta-box">
+    <div class="meta-grid">
+      <div>
+        <div class="meta-item-label">Nama Kelompok</div>
+        <div class="meta-item-val">HIFIVE!</div>
+      </div>
+      <div>
+        <div class="meta-item-label">Kelas &amp; Tanggal</div>
+        <div class="meta-item-val">XI TKJ 2 • 15-10-2026</div>
+      </div>
+    </div>
+    <div style="margin-top: 1rem;">
+      <div class="meta-item-label">Anggota Kelompok:</div>
+      <div class="member-list">
+        <span class="member-pill">1. Kikan Dia Patrcia</span>
+        <span class="member-pill">2. Minah Dewanti Uttami</span>
+        <span class="member-pill">3. Adelina Septri Asha</span>
+        <span class="member-pill">4. Syifa Aulia Adzka</span>
+        <span class="member-pill">5. Muhammad Aji Suyanto</span>
+        <span class="member-pill">6. Rehan Muhafiz</span>
+        <span class="member-pill">7. Rafa Aditya</span>
+      </div>
+    </div>
+  </div>
+  <a class="btn-cta" href="#kapan">
+    <span>Mulai Membaca Materi</span>
+    <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg>
+  </a>
+</section>
+
+<!-- 2. KAPAN -->
+<section id="kapan">
+  <span class="section-tag">MISI 1 • KRONOLOGI</span>
+  <h2 class="section-title">Kapan Periode Ini Berlangsung?</h2>
+  <p class="section-desc">Rentang waktu periode awal Reformasi dan status historisnya dalam ketatanegaraan Indonesia. <em>Klik tiap kartu untuk melihat detail peristiwa.</em></p>
+  <div class="timeline">
+    <div class="timeline-item open" onclick="toggleTimeline(this)">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <span class="timeline-date">21 Mei 1998</span>
+          <span style="font-size: 0.75rem; color: var(--text-light);">▼</span>
+        </div>
+        <div class="timeline-title">Awal Periode: Pengunduran Diri Presiden Soeharto</div>
+        <div class="timeline-body">Peristiwa ini menandai berakhirnya masa pemerintahan Orde Baru yang telah berkuasa selama 32 tahun. Momentum pengunduran diri di bawah tekanan krisis ekonomi 1997, Tragedi Trisakti, serta demonstrasi mahasiswa nasional menjadi titik tolak transisi demokrasi di Indonesia.</div>
+        <div class="timeline-hint">Ketuk untuk menutup / membuka detail</div>
+      </div>
+    </div>
+    <div class="timeline-item" onclick="toggleTimeline(this)">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <span class="timeline-date">1999 – 2004</span>
+          <span style="font-size: 0.75rem; color: var(--text-light);">▼</span>
+        </div>
+        <div class="timeline-title">Fase Konsolidasi Awal Reformasi</div>
+        <div class="timeline-body">Ditandai oleh penyelenggaraan Pemilu 1999 yang bebas multipartai (48 partai), amandemen UUD 1945 secara bertahap (1999–2002), otonomi daerah, hingga puncaknya penyelenggaraan Pemilihan Presiden langsung pertama pada tahun 2004.</div>
+        <div class="timeline-hint">Ketuk untuk menutup / membuka detail</div>
+      </div>
+    </div>
+    <div class="timeline-item" onclick="toggleTimeline(this)">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <span class="timeline-date">Hingga Saat Ini</span>
+          <span style="font-size: 0.75rem; color: var(--text-light);">▼</span>
+        </div>
+        <div class="timeline-title">Tahun Akhir: Masih Berlangsung</div>
+        <div class="timeline-body">Era Reformasi tidak memiliki tahun akhir yang pasti karena merupakan sejarah kontemporer yang masih berjalan. Sistem tata negara Indonesia hingga saat ini tetap bertumpu pada fondasi-fondasi demokratis yang diletakkan pada masa awal reformasi.</div>
+        <div class="timeline-hint">Ketuk untuk menutup / membuka detail</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SIAPA (3D flip cards) -->
+<section id="siapa">
+  <span class="section-tag">MISI 2 • AKTOR KUNCI</span>
+  <h2 class="section-title">Siapa Tokoh &amp; Lembaga Penting?</h2>
+  <p class="section-desc">Identifikasi tokoh pemimpin transisi dan lembaga penyelenggara yang menentukan arah reformasi kelembagaan. <em>Klik kartu untuk membalik (3D flip) dan melihat ulasan sejarahnya.</em></p>
+  <div class="cards-grid">
+
+    <div class="flip-card-container" onclick="toggleFlip(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div>
+            <div class="character-top">
+              <div class="character-avatar">SH</div>
+              <div>
+                <div class="character-name">Soeharto</div>
+                <div class="character-role">Presiden Ke-2 RI (Orde Baru)</div>
+              </div>
+            </div>
+            <p class="character-desc">Memimpin rezim Orde Baru selama 32 tahun. Peran krusialnya adalah mengambil keputusan untuk <strong>mengundurkan diri pada 21 Mei 1998</strong> di bawah tekanan gerakan mahasiswa dan krisis ekonomi.</p>
+          </div>
+          <button aria-label="Balik untuk Detail Peran" class="btn-flip-trigger" type="button">
+            <span>Balik untuk Detail Peran</span>
+            <span style="font-size: 1.1rem; line-height: 1;">↺</span>
+          </button>
+        </div>
+        <div class="flip-card-back">
+          <div class="back-header">
+            <span class="back-header-tag">Detail Analisis Historis</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">Soeharto</span>
+          </div>
+          <div class="back-content">Pengunduran dirinya menjadi pintu gerbang formal runtuhnya tatanan kekuasaan sentralistik dan membuka babak demokratisasi nasional secara menyeluruh di Republik Indonesia.</div>
+          <button aria-label="Kembali ke tampak depan" class="btn-flip-back" type="button"><span>↺</span><span>Kembali</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container" onclick="toggleFlip(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div>
+            <div class="character-top">
+              <div class="character-avatar">BH</div>
+              <div>
+                <div class="character-name">B.J. Habibie</div>
+                <div class="character-role">Presiden Ke-3 RI (Transisi)</div>
+              </div>
+            </div>
+            <p class="character-desc">Memimpin masa transisi genting dengan melonggarkan kebebasan pers, mengesahkan UU Partai Politik, melaksanakan UU Otonomi Daerah, serta memfasilitasi referendum Timor Timur.</p>
+          </div>
+          <button aria-label="Balik untuk Detail Peran" class="btn-flip-trigger" type="button">
+            <span>Balik untuk Detail Peran</span>
+            <span style="font-size: 1.1rem; line-height: 1;">↺</span>
+          </button>
+        </div>
+        <div class="flip-card-back">
+          <div class="back-header">
+            <span class="back-header-tag">Detail Analisis Historis</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">B.J. Habibie</span>
+          </div>
+          <div class="back-content">Habibie juga berhasil menyelenggarakan pemilu legislatif bebas pertama sejak 1955 pada tahun 1999 dan secara legawa menolak mencalonkan diri kembali setelah laporan pertanggungjawabannya ditolak MPR.</div>
+          <button aria-label="Kembali ke tampak depan" class="btn-flip-back" type="button"><span>↺</span><span>Kembali</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container" onclick="toggleFlip(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div>
+            <div class="character-top">
+              <div class="character-avatar">GD</div>
+              <div>
+                <div class="character-name">Abdurrahman Wahid</div>
+                <div class="character-role">Presiden Ke-4 RI</div>
+              </div>
+            </div>
+            <p class="character-desc">Membubarkan Kementerian Penerangan untuk mencabut kontrol mutlak negara terhadap media massa serta membuka ruang lebar bagi kebebasan berekspresi dan toleransi budaya.</p>
+          </div>
+          <button aria-label="Balik untuk Detail Peran" class="btn-flip-trigger" type="button">
+            <span>Balik untuk Detail Peran</span>
+            <span style="font-size: 1.1rem; line-height: 1;">↺</span>
+          </button>
+        </div>
+        <div class="flip-card-back">
+          <div class="back-header">
+            <span class="back-header-tag">Detail Analisis Historis</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">Gus Dur</span>
+          </div>
+          <div class="back-content">Mengizinkan perayaan Imlek secara terbuka dan merintis jalur dialog damai di Aceh dan Papua, sebelum akhirnya dimakzulkan oleh MPR pada tahun 2001 akibat tensi politik parlemen.</div>
+          <button aria-label="Kembali ke tampak depan" class="btn-flip-back" type="button"><span>↺</span><span>Kembali</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card-container" onclick="toggleFlip(this)">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div>
+            <div class="character-top">
+              <div class="character-avatar">LB</div>
+              <div>
+                <div class="character-name">KPU &amp; DPR/MPR</div>
+                <div class="character-role">Lembaga Penyelenggara &amp; Pengawas</div>
+              </div>
+            </div>
+            <p class="character-desc"><strong>KPU:</strong> Badan independen non-pemerintah penyelenggara pemilu. <strong>DPR/MPR:</strong> Parlemen aktif yang mengamandemen konstitusi dan mengawasi eksekutif secara tegas.</p>
+          </div>
+          <button aria-label="Balik untuk Detail Peran" class="btn-flip-trigger" type="button">
+            <span>Balik untuk Detail Peran</span>
+            <span style="font-size: 1.1rem; line-height: 1;">↺</span>
+          </button>
+        </div>
+        <div class="flip-card-back">
+          <div class="back-header">
+            <span class="back-header-tag">Detail Analisis Historis</span>
+            <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">KPU &amp; Parlemen</span>
+          </div>
+          <div class="back-content">Menegakkan mekanisme penyeimbang kekuasaan (<em>checks and balances</em>) yang nyata, termasuk kemampuan memanggil hingga memakzulkan kepala pemerintahan demi integritas konstitusi.</div>
+          <button aria-label="Kembali ke tampak depan" class="btn-flip-back" type="button"><span>↺</span><span>Kembali</span></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4. BAGAIMANA -->
+<section id="bagaimana">
+  <span class="section-tag">MISI 3 • PRAKTIK DEMOKRASI</span>
+  <h2 class="section-title">Bagaimana Praktik Demokrasi Dijalankan?</h2>
+  <p class="section-desc">Empat pilar utama implementasi demokrasi pada masa awal reformasi (1998–2004). <em>Klik pada judul untuk membaca penjelasan lengkap.</em></p>
+  <div class="accordion">
+    <div class="accordion-item active">
+      <button class="accordion-header" onclick="toggleAccordion(this)"><span>1. Pemilu dan Partisipasi Rakyat</span><span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Bebas &amp; Independen:</strong> Pembatasan jumlah partai politik dicabut. Pemilu 1999 sukses diselenggarakan dengan keikutsertaan 48 partai politik dan dikelola oleh Komisi Pemilihan Umum (KPU) yang mandiri, lepas dari kendali menteri kabinet.</p>
+        <p style="margin-top: 0.5rem;"><strong>Partisipasi Langsung:</strong> Rakyat memiliki hak suara langsung dalam pemilu legislatif, referendum status Timor Timur (1999), hingga pemilihan presiden secara langsung pertama pada Pemilu 2004.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)"><span>2. Peran Parlemen (DPR &amp; MPR)</span><span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Pengawasan Efektif:</strong> Parlemen tidak lagi sekadar menjadi lembaga formalitas stempel pemerintah (rubber stamp). Parlemen memiliki wewenang politik nyata untuk mengawasi kinerja eksekutif, bahkan mampu memakzulkan presiden (kasus pemakzulan Gus Dur tahun 2001).</p>
+        <p style="margin-top: 0.5rem;"><strong>Regulator Reformis:</strong> Menghasilkan 4 tahap amandemen UUD 1945 (1999–2002) guna membatasi periode jabatan kepresidenan dan mengesahkan UU krusial seperti UU Partai Politik dan Otonomi Daerah.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)"><span>3. Hubungan Pemerintah dan Rakyat</span><span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Pemerintah Lebih Responsif:</strong> Pengambilan kebijakan negara sangat dipengaruhi oleh aspirasi publik, gerakan mahasiswa, dan tuntutan koalisi masyarakat sipil.</p>
+        <p style="margin-top: 0.5rem;"><strong>Pendekatan Dialogis &amp; Desentralisasi:</strong> Sentralisme kekuasaan Jakarta dialihkan ke daerah tingkat kabupaten/kota melalui kebijakan Otonomi Daerah. Konflik kedaerahan (Aceh dan Papua) direspons melalui jalur rekonsiliasi dan dialog politik.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)"><span>4. Kebebasan Berpendapat dan Pers</span><span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Penghapusan Sensor Resmi:</strong> Pembubaran Kementerian Penerangan mengakhiri kewajiban SIUPP (Surat Izin Usaha Penerbitan Pers) dan sensor ketat. Media cetak serta televisi bebas membedah dan memperdebatkan dinamika politik tanpa ketakutan pembredelan.</p>
+        <p style="margin-top: 0.5rem;"><strong>Toleransi Budaya:</strong> Pencabutan larangan diskriminatif rasial dan kebudayaan, seperti izin resmi perayaan tahun baru Imlek secara terbuka di ruang publik.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. SISTEM PEMERINTAHAN -->
+<section id="sistem">
+  <span class="section-tag">MISI 4 • PERBANDINGAN TATA NEGARA</span>
+  <h2 class="section-title">Sistem Pemerintahan: Apa yang Berubah?</h2>
+  <p class="section-desc">Gunakan tombol filter di bawah untuk melihat perbedaan mendasar antara rezim Orde Baru dan Era Reformasi berdasarkan aspek tertentu.</p>
+  <div class="filter-pills">
+    <button class="filter-btn active" onclick="filterTable('semua', this)">Semua Aspek</button>
+    <button class="filter-btn" onclick="filterTable('media', this)">Media &amp; Sensor</button>
+    <button class="filter-btn" onclick="filterTable('partai', this)">Partai Politik</button>
+    <button class="filter-btn" onclick="filterTable('pemilu', this)">Pemilihan Umum</button>
+    <button class="filter-btn" onclick="filterTable('daerah', this)">Otonomi / Daerah</button>
+  </div>
+  <div class="comparison-container">
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th class="col-aspect">Aspek Perubahan</th>
+          <th class="col-orba">Masa Orde Baru</th>
+          <th class="col-reformasi">Era Reformasi (1998–2004)</th>
+        </tr>
+      </thead>
+      <tbody id="comparison-tbody">
+        <tr data-aspect="media">
+          <td class="col-aspect"><strong>Kontrol Media &amp; Sensor</strong></td>
+          <td>Pemerintah mengendalikan media secara ketat melalui Kementerian Penerangan, ancaman bredel izin penerbitan (SIUPP), dan sensor isi siaran.</td>
+          <td>Kementerian Penerangan dibubarkan, sensor dihapus, izin terbit dipermudah, pers diberikan kebebasan seluas-luasnya untuk mengkritik.</td>
+        </tr>
+        <tr data-aspect="partai">
+          <td class="col-aspect"><strong>Sistem Kepartaian</strong></td>
+          <td>Jumlah partai politik dibatasi ketat hanya 3 kontestan (PPP, Golkar, PDI) dan diwajibkan menerapkan asas tunggal.</td>
+          <td>Pembatasan partai dicabut; masyarakat bebas mendirikan partai politik (48 partai berkompetisi pada Pemilu 1999).</td>
+        </tr>
+        <tr data-aspect="pemilu">
+          <td class="col-aspect"><strong>Penyelenggara Pemilu</strong></td>
+          <td>Penyelenggaraan pemilu berada di bawah kendali Kementerian Dalam Negeri (Lembaga Pemilihan Umum) dengan dominasi birokrasi dan militer.</td>
+          <td>Diselenggarakan secara demokratis oleh Komisi Pemilihan Umum (KPU) yang berkedudukan mandiri dan lepas dari campur tangan menteri.</td>
+        </tr>
+        <tr data-aspect="daerah">
+          <td class="col-aspect"><strong>Sentralisasi vs Desentralisasi</strong></td>
+          <td>Kekuasaan bersifat sentralistik di Jakarta. Kepala daerah praktis ditentukan dan diarahkan oleh komando pemerintah pusat.</td>
+          <td>Penerapan UU Otonomi Daerah yang mendelegasikan wewenang nyata, pengelolaan keuangan, dan urusan pemerintahan ke tingkat daerah.</td>
+        </tr>
+        <tr data-aspect="pemilu">
+          <td class="col-aspect"><strong>Pemilihan Eksekutif</strong></td>
+          <td>Presiden dipilih secara tidak langsung oleh anggota MPR yang sebagian besar ditunjuk melalui fraksi utusan golongan dan ABRI.</td>
+          <td>Amandemen UUD 1945 mengesahkan pembatasan masa jabatan maksimal 2 periode dan pemilihan presiden secara langsung oleh rakyat (sejak 2004).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 6. KEKUATAN -->
+<section id="kekuatan">
+  <span class="section-tag">MISI 5 • SISI POSITIF</span>
+  <h2 class="section-title">Kekuatan &amp; Kemajuan Demokrasi</h2>
+  <p class="section-desc">Pencapaian fundamental yang berhasil dipulihkan pada fase transisi demokrasi 1998–2004.</p>
+  <div class="cards-grid">
+    <div class="character-card" style="background: var(--bg-surface); border-radius: 12px; padding: 1.25rem; border: 1px solid var(--border-color); border-left: 4px solid #16a34a;">
+      <div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: #16a34a; text-transform: uppercase; margin-bottom: 0.35rem;">Pencapaian 1</div>
+        <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-main);">Terbukanya Kebebasan Berpendapat dan Pers</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">Berbeda dengan masa Orde Baru di mana sensor merajalela, pembubaran Kementerian Penerangan menciptakan iklim sosial-politik yang jauh lebih terbuka. Ditandai dengan ruang debat politik terbuka di media berita, kebebasan berserikat bagi serikat buruh/mahasiswa, serta peningkatan ekspresi dalam karya seni dan sastra.</p>
+      </div>
+    </div>
+    <div class="character-card" style="background: var(--bg-surface); border-radius: 12px; padding: 1.25rem; border: 1px solid var(--border-color); border-left: 4px solid #16a34a;">
+      <div>
+        <div style="font-size: 0.8rem; font-weight: 700; color: #16a34a; text-transform: uppercase; margin-bottom: 0.35rem;">Pencapaian 2</div>
+        <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-main);">Penyelenggaraan Pemilu Bebas &amp; Demokratis</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">Pemilu Legislatif 1999 menjadi tonggak pemilu bebas pertama di Indonesia sejak 1955. Dikelola oleh KPU independen, rakyat dapat menyalurkan aspirasi tanpa ancaman mobilisasi aparatur negara, disusul terwujudnya pemilihan presiden langsung pertama pada tahun 2004.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. MASALAH -->
+<section id="masalah">
+  <span class="section-tag">MISI 6 • PERSOALAN &amp; KELEMAHAN</span>
+  <h2 class="section-title">Tantangan &amp; Kelemahan Demokrasi</h2>
+  <p class="section-desc">Bukti persoalan sistemik yang dihadapi sistem perpolitikan Indonesia, baik pada dinamika awal hingga perkembangannya.</p>
+  <div class="accordion">
+    <div class="accordion-item active">
+      <button class="accordion-header" onclick="toggleAccordion(this)"><span>1. Tekanan terhadap Kebebasan Berekspresi dan Hak Sipil</span><span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Penjelasan &amp; Bukti:</strong> Kebebasan berekspresi mengalami kerentanan akibat penerapan regulasi pembatasan (seperti kriminalisasi kritik melalui aturan UU ITE). Terdapat tren intimidasi dan pembungkaman suara-suara kritis masyarakat maupun media pers saat menyoroti kebijakan pemerintah.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)"><span>2. Degradasi Kualitas dan Transparansi Pemilu</span><span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Penjelasan &amp; Bukti:</strong> Proses pemilihan umum mengalami penurunan dalam parameter transparansi, kejujuran, dan keadilan. Terdapat temuan indikasi kompromi/negosiasi hasil pemilu, praktik politik uang yang mengakar, serta dugaan intervensi struktural pemerintah dalam tahapan pemungutan suara.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button class="accordion-header" onclick="toggleAccordion(this)"><span>3. Dominasi Kekuatan Eksekutif atas Lembaga Negara Lain</span><span class="accordion-icon">+</span></button>
+      <div class="accordion-content">
+        <p><strong>Penjelasan &amp; Bukti:</strong> Terjadi penguatan kontrol eksekutif yang melampaui batas kewajaran, di mana fungsi penyeimbang (<em>checks and balances</em>) dari legislatif dan peradilan (yudikatif) melemah akibat kooptasi politik dan intervensi kekuasaan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. SEBAB-AKIBAT -->
+<section id="sebab-akibat">
+  <span class="section-tag">MISI 7 • HUBUNGAN SEBAB-AKIBAT</span>
+  <h2 class="section-title">Mengapa Terjadi Perubahan?</h2>
+  <p class="section-desc">Analisis dinamika kausalitas: faktor yang meruntuhkan Orde Baru dan memicu peralihan ke masa Reformasi, serta dinamika internal yang sedang berlangsung.</p>
+  <div class="cause-effect-grid">
+    <div class="ce-card">
+      <span class="ce-badge ce-badge-cause">Sebab Transisi 1998</span>
+      <div class="ce-title">Krisis Multidimensi &amp; Desakan Reformasi</div>
+      <p class="ce-text">Akumulasi krisis moneter dan ekonomi 1997, maraknya korupsi, kolusi, dan nepotisme (KKN), serta gelombang unjuk rasa mahasiswa berskala nasional pasca-Tragedi Trisakti dan Kerusuhan Mei 1998.</p>
+    </div>
+    <div class="ce-card">
+      <span class="ce-badge ce-badge-effect">Akibat Transisi 1998</span>
+      <div class="ce-title">Lahirnya Era Reformasi</div>
+      <p class="ce-text">Presiden Soeharto meletakkan jabatan pada 21 Mei 1998. Ini mengakhiri 32 tahun masa Orde Baru dan melahirkan era baru yang ditandai kebebasan pers, otonomi daerah, penghapusan Dwi Fungsi ABRI, dan pemilu terbuka.</p>
+    </div>
+  </div>
+  <div class="mutakhir-box">
+    <div class="mutakhir-title">
+      <svg fill="none" height="20" stroke="#c99738" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="20"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+      <span>Dinamika Mutakhir: Transisi Status Demokrasi (Laporan V-Dem 2024)</span>
+    </div>
+    <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;"><strong>Hubungan Internal Periode:</strong> Meskipun Era Reformasi belum berakhir secara kronologis, terdapat pergeseran kualitas tata kelola negara. Menurut analisis laporan <em>Varieties of Democracy (V-Dem) Institute 2024</em>, kombinasi antara pelemahan kebebasan berekspresi, degradasi integritas pemilu, dan dominasi eksekutif terhadap lembaga peradilan menyebabkan Indonesia mengalami <strong>kemunduran demokrasi (democratic backsliding)</strong>, bergeser dari status <em>demokrasi elektoral</em> menuju <em>otokrasi elektoral</em>.</p>
+  </div>
+</section>
+
+<!-- 9. PROFIL -->
+<section id="profil">
+  <span class="section-tag">BAGIAN B • TABEL PROFIL PERIODE</span>
+  <h2 class="section-title">Ringkasan Komprehensif Periode</h2>
+  <p class="section-desc">Matriks rangkuman seluruh aspek analisis historis awal Era Reformasi dalam satu tampilan tabel.</p>
+  <div class="profile-table-wrapper">
+    <table class="profile-table">
+      <tbody>
+        <tr><th>Nama Periode</th><td><strong>Era Reformasi</strong></td></tr>
+        <tr><th>Rentang Tahun</th><td><strong>1998 – Sekarang</strong> (Fokus kajian awal: 1998–2004)</td></tr>
+        <tr>
+          <th>Peristiwa Penting</th>
+          <td>
+            • Pengunduran diri Presiden Soeharto (21 Mei 1998)<br>
+            • Penyelenggaraan Pemilu bebas pertama (1999) &amp; referendum Timor Leste<br>
+            • Pemakzulan Abdurrahman Wahid (Gus Dur) pada tahun 2001<br>
+            • Amandemen UUD 1945 (1999–2002) &amp; Pemilu Presiden langsung pertama (2004)
+          </td>
+        </tr>
+        <tr>
+          <th>Tokoh &amp; Lembaga Kunci</th>
+          <td>
+            • <strong>Soeharto:</strong> Pemimpin Orde Baru yang mundur akibat krisis dan demonstrasi.<br>
+            • <strong>B.J. Habibie:</strong> Membuka ruang pers, pemilu bebas, dan otonomi daerah.<br>
+            • <strong>Abdurrahman Wahid:</strong> Menghapus sensor departemen penerangan &amp; toleransi budaya.<br>
+            • <strong>KPU, DPR/MPR, V-Dem:</strong> Penyelenggara independen, pengawas parlemen, dan pemantau demokrasi global.
+          </td>
+        </tr>
+        <tr>
+          <th>Sistem Pemerintahan</th>
+          <td>
+            • Sistem desentralisasi kewenangan melalui UU Otonomi Daerah.<br>
+            • Demokrasi konstitusional dengan pembatasan masa jabatan presiden maksimal 2 periode lewat amandemen UUD 1945.
+          </td>
+        </tr>
+        <tr>
+          <th>Karakteristik Demokrasi</th>
+          <td>
+            • Keterbukaan ruang publik dan kebebasan pers tanpa sensor resmi.<br>
+            • Terjadinya dinamika regresi dari demokrasi elektoral menuju otokrasi elektoral (catatan V-Dem 2024).
+          </td>
+        </tr>
+        <tr>
+          <th>Praktik Politik</th>
+          <td>
+            • Pelaksanaan pemilu langsung dan multipartai bebas secara berkala.<br>
+            • Pengawasan legislatif terhadap eksekutif berjalan terbuka dan aktif.
+          </td>
+        </tr>
+        <tr>
+          <th>Kelebihan Utama</th>
+          <td>
+            • Terjaminnya kebebasan berpendapat, pers, dan ekspresi masyarakat.<br>
+            • Kedaulatan pemilih langsung dan distribusi kewenangan ke daerah.
+          </td>
+        </tr>
+        <tr>
+          <th>Permasalahan Utama</th>
+          <td>
+            • Penurunan kebebasan berekspresi akibat regulasi restriktif (UU ITE).<br>
+            • Penurunan integritas pemilu dan pelemahan fungsi checks and balances lembaga negara.
+          </td>
+        </tr>
+        <tr>
+          <th>Pengakhiran &amp; Transisi</th>
+          <td><strong>Belum Berakhir:</strong> Merupakan babak sejarah kontemporer yang terus berjalan hingga masa kini, dengan tantangan memelihara substansi demokrasi di era modern.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 10. REFLEKSI -->
+<section id="refleksi">
+  <span class="section-tag">BAGIAN D • REFLEKSI &amp; ANALISIS KRITIS</span>
+  <h2 class="section-title">Refleksi Pengamat Demokrasi</h2>
+  <p class="section-desc">Analisis berbasis bukti sejarah mengenai elemen yang esensial untuk dipertahankan dan diperbaiki dalam kehidupan bernegara.</p>
+  <div class="reflection-grid">
+    <div class="ref-card maintain">
+      <div class="ref-heading">
+        <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        <span>Aspek yang Perlu Dipertahankan</span>
+      </div>
+      <p style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-main);">Kebebasan Berpendapat, Kebebasan Pers, dan Partisipasi Politik Rakyat</p>
+      <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55;"><strong>Alasan &amp; Bukti Sejarah:</strong> Pencapaian paling bernilai yang membedakan Era Reformasi dari Orde Baru adalah jaminan kebebasan sipil. Pembubaran Kementerian Penerangan di era Gus Dur menghentikan tradisi sensor represif sehingga memicu debat rasional dan partisipasi publik yang luas. Pelaksanaan pemilu multipartai secara teratur sejak 1999 dan pemilu presiden langsung sejak 2004 terbukti menjaga legitimasi bahwa kedaulatan tertinggi berada di tangan rakyat.</p>
+    </div>
+    <div class="ref-card improve">
+      <div class="ref-heading">
+        <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="22"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+        <span>Aspek yang Perlu Diperbaiki</span>
+      </div>
+      <p style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-main);">Perlindungan Ruang Sipil &amp; Independensi Lembaga Negara (Checks and Balances)</p>
+      <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.55;"><strong>Alasan &amp; Bukti Sejarah:</strong> Berdasarkan riset <em>V-Dem Institute 2024</em>, Indonesia berisiko mengalami kemunduran demokrasi. Tekanan terhadap aktivis/media menggunakan pasal karet UU ITE, indikasi pelemahan transparansi pemilu, dan dominasi eksekutif yang membayangi independensi lembaga peradilan (yudikatif) harus segera dikoreksi agar tata politik kita tidak kembali terjerumus pada konsentrasi kekuasaan otoriter.</p>
+    </div>
+  </div>
+  <div style="margin-top: 1.5rem; background: var(--bg-surface); border: 1px dashed var(--border-color); border-radius: 10px; padding: 1.25rem;">
+    <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem;">Pelajaran Utama bagi Siswa SMK &amp; Generasi Muda:</h4>
+    <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">Demokrasi bukan semata-mata mencoblos di bilik suara saat pemilu (<em>demokrasi prosedural</em>), melainkan membutuhkan keberanian merawat kebebasan berpikir, memelihara checks and balances, dan bersikap kritis terhadap penyalahgunaan kekuasaan (<em>demokrasi substantif</em>).</p>
+  </div>
+</section>
+
+<!-- 11. SUMBER -->
+<section id="sumber">
+  <span class="section-tag">SUMBER BELAJAR</span>
+  <h2 class="section-title">Daftar Sumber Rujukan</h2>
+  <p class="section-desc">Data dan materi dalam lembar kerja pembelajaran ini disusun berdasarkan sumber referensi berikut:</p>
+  <ul class="source-list">
+    <li class="source-item">
+      <strong>1. Ensiklopedia Sejarah Indonesia:</strong><br>
+      <a href="https://id.wikipedia.org/wiki/Era_Reformasi" rel="noopener noreferrer" target="_blank">https://id.wikipedia.org/wiki/Era_Reformasi</a>
+    </li>
+    <li class="source-item">
+      <strong>2. Laporan &amp; Jurnal Ilmiah V-Dem Institute:</strong><br>
+      <a href="https://www.researchgate.net/publication/383983761_KEMUNDURAN_DEMOKRASI_DI_INDONESIA_ANALISIS_LAPORAN_VARIETIES_OF_DEMOCRACY_V-DEM_INSTITUTE_2024" rel="noopener noreferrer" target="_blank">https://www.researchgate.net/publication/383983761_KEMUNDURAN_DEMOKRASI_DI_INDONESIA_ANALISIS_LAPORAN_VARIETIES_OF_DEMOCRACY_V-DEM_INSTITUTE_2024</a>
+    </li>
+  </ul>
+</section>
+
+</main>
+
+<button aria-label="Kembali ke atas" id="back-to-top" onclick="scrollToTop()" title="Kembali ke atas">
+  <svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="22"><path d="m18 15-6-6-6 6"></path></svg>
+</button>
+
+<footer>
+  <div class="container" style="padding: 0;">
+    <p><strong>LKPD Kelompok 5 (HIFIVE!) • Kelas XI TKJ 2</strong></p>
+    <p style="margin-top: 0.25rem;">Media Presentasi Sejarah Indonesia: Awal Demokrasi Reformasi (1998–2004)</p>
+  </div>
+</footer>
+
+<script>
+// 1. Reading progress bar & back-to-top visibility
+window.addEventListener('scroll', () => {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById('progress-bar').style.width = scrolled + '%';
+
+  const backBtn = document.getElementById('back-to-top');
+  if (winScroll > 320) {
+    backBtn.classList.add('show');
+  } else {
+    backBtn.classList.remove('show');
+  }
+
+  updateActiveNavLink();
+});
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// 2. Active nav link on scroll
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+function updateActiveNavLink() {
+  let currentSectionId = '';
+  const scrollPosition = window.scrollY + 120;
+
+  sections.forEach(section => {
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+    if (scrollPosition >= top && scrollPosition < top + height) {
+      currentSectionId = section.getAttribute('id');
+    }
+  });
+
+  if (currentSectionId) {
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + currentSectionId) {
+        link.classList.add('active');
+        link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }
+    });
+  }
+}
+
+// 3. Fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08 });
+
+sections.forEach(sec => observer.observe(sec));
+
+// 4. Timeline toggle
+function toggleTimeline(element) {
+  element.classList.toggle('open');
+}
+
+// 5. 3D card flip
+function toggleFlip(container) {
+  container.classList.toggle('flipped');
+}
+
+// 6. Accordion
+function toggleAccordion(btn) {
+  btn.closest('.accordion-item').classList.toggle('active');
+}
+
+// 7. Comparison table filter
+function filterTable(filter, buttonElement) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  buttonElement.classList.add('active');
+
+  document.querySelectorAll('#comparison-tbody tr').forEach(row => {
+    const aspect = row.getAttribute('data-aspect');
+    row.style.display = (filter === 'semua' || aspect === filter) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
